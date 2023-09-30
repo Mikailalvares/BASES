@@ -1,80 +1,118 @@
-/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Nunito+Sans&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-/* Define general styles for the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header styles */
-header {
-    background-color: #3498db;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a192f;
+    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #041021;
+    padding: 20px;
     text-align: center;
-    padding: 1rem 0;
 }
 
 header h1 {
     font-size: 2rem;
 }
 
-/* Navigation styles */
 nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #041021;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
+nav li {
     margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #fff;
+    color: #64ffda;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Section styles */
-section {
-    background-color: #fff;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+nav a:hover {
+    color: #00adb5;
 }
 
-section h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+.container {
+    padding: 120px 30px 30px;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
-section p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+.section {
+    margin-bottom: 40px;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
+.section h2 {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #7d96bd;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section .message {
     text-align: center;
-    padding: 1rem 0;
+}
+
+.section .message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section .message p {
+    font-size: 1.2rem;
+    color: #7d96bd;
+}
+
+/* Add your custom styles for other sections here */
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #041021;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #64ffda;
 }
